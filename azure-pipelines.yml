@@ -6,10 +6,13 @@
 trigger:
 - master
 
-pool:
- name: Deafult
- demands: 
-  - agent.name -equals Keerthi-agent
+stages:
+- stage: Deploy
+  pool: 
+   name: AgentPoolName(e.g. alm-aws-pool)
+   demands:
+    - agent.name -equals Agentname (e.g. deploy-05-agent1)
+
 
 
 steps:
