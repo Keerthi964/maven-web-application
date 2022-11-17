@@ -6,10 +6,11 @@
 trigger:
 - master
 
-pool: 
-  name: Default
-  demands:
-    - agent.name -equals Keerthi-agent
+pool:
+ name: Deafult
+ demands: 
+ - agent.name -equals Keerthi-agent
+
 
 steps:
 - task: Maven@3
