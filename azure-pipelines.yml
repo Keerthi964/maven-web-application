@@ -9,7 +9,7 @@ trigger:
 pool:
  name: Deafult
  demands: 
- - agent.name -equals Keerthi-agent
+  - agent.name -equals Keerthi-agent
 
 
 steps:
